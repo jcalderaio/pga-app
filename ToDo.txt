@@ -1,0 +1,5 @@
+
+
+6 Add a "Delete" button to each row and implement it
+
+7) Deploy the app to Github + Production Server
