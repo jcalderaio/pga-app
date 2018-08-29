@@ -33,6 +33,10 @@ class InputForm extends Component {
     };
   }
 
+  newState = state => {
+    this.setState({ scoresArray: state });
+  };
+
   deleteRow = deleteId => {
     // source: http://stackoverflow.com/questions/16491758/remove-objects-from-array-by-object-property
 
@@ -173,6 +177,7 @@ class InputForm extends Component {
         </Form>
         <div style={{ paddingTop: 100 }}>
           <ScoreTable
+            newState={this.newState}
             data={this.state.scoresArray}
             deleteRow={this.deleteRow}
           />
